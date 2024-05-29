@@ -30,7 +30,7 @@ class Manager extends Employee
     // Calculate Manager Annual Salary
     AnnualCalc()
     {
-        let Bonus = this.salery * .15;
+        let Bonus = super.AnnualCalc() * .15;
         let Annual = super.AnnualCalc();
         let Total = Annual + Bonus;
         console.log(`\n${this.name} works in the ${this.department} department.\nAnnual Salary: $${Annual}\nBonus: $${Bonus}\nTotal Annual Salary: $${Total}`);
