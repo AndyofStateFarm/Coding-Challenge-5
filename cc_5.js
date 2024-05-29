@@ -33,6 +33,13 @@ class Manager extends Employee
         let Bonus = this.salery * .15;
         let Annual = super.AnnualCalc();
         let Total = Annual + Bonus;
-        console.log(`${this.name} works in the ${this.department} department.` /n `Annual Salary: $${Annual}` /n `Bonus: $${bonus}` /n `Total Annual Salary: $${Total}`);
+        console.log(`\n${this.name} works in the ${this.department} department.\nAnnual Salary: $${Annual}\nBonus: $${Bonus}\nTotal Annual Salary: $${Total}`);
     }
 }
+
+// Test Data
+let manager1 = new Manager(`Bob Ross`, 6600, `Digital Marketing`);
+let manager2 = new Manager(`Debbie Little`, 7205, `Finance`);
+
+manager1.AnnualCalc();
+manager2.AnnualCalc();
